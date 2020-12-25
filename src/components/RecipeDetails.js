@@ -26,7 +26,7 @@ export default function RecipeDetails({ ingredients, open, setOpen }) {
         {ingredients.map((ingredient, index) => (
           <ul key={index}>
             <li>{ingredient.text}</li>
-            <li>Weight - {ingredient.weight}g</li>
+            <li>Weight - {ingredient.weight.toFixed(0)}g</li>
           </ul>
         ))}
       </DialogContent>
